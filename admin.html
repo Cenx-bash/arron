@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="CSS/ad_style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Panel</h2>
+
+    <!-- Edit Questions Section -->
+    <div class="panel">
+      <h3>Edit Questions</h3>
+      <form id="edit-questions-form">
+        <label for="edit-q1">Rating Question:</label>
+        <input type="text" id="edit-q1" placeholder="Enter Rating Question">
+        
+        <label for="edit-q2">Yes/No Q2:</label>
+        <input type="text" id="edit-q2" placeholder="Enter Yes/No Question 2">
+        <input type="checkbox" id="include-q2"> Include this question
+        
+        <label for="edit-q3">Yes/No Q3:</label>
+        <input type="text" id="edit-q3" placeholder="Enter Yes/No Question 3">
+        <input type="checkbox" id="include-q3"> Include this question
+        
+        <label for="edit-q4">Yes/No Q4:</label>
+        <input type="text" id="edit-q4" placeholder="Enter Yes/No Question 4">
+        <input type="checkbox" id="include-q4"> Include this question
+        
+        <label for="edit-q5">Yes/No Q5:</label>
+        <input type="text" id="edit-q5" placeholder="Enter Yes/No Question 5">
+        <input type="checkbox" id="include-q5"> Include this question
+        
+        <button type="button" onclick="saveQuestions()">Save Questions</button>
+      </form>
+      <p id="save-feedback"></p>
+    </div>
+
+    <!-- Feedback Results Section -->
+    <div class="panel">
+      <h3>Feedback Results</h3>
+      <table id="feedback-results" class="results-table">
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Rating</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="JS/admin.js"></script>
+</body>
+</html>

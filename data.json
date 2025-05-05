@@ -1,0 +1,11 @@
+{
+    "questions": [
+      {"id": "q1", "type": "rating", "text": "How would you rate the service?"},
+      {"id": "q2", "type": "yesno", "text": "Was the staff helpful?"},
+      {"id": "q3", "type": "yesno", "text": "Was the process easy?"},
+      {"id": "q4", "type": "yesno", "text": "Were you satisfied with the service?"},
+      {"id": "q5", "type": "yesno", "text": "Would you recommend this office?"}
+    ],
+    "responses": []
+  }
+  

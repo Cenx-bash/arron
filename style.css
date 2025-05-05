@@ -1,0 +1,111 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e6f0ff, #f2f7ff);
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn.primary {
+  background-color: #007bff;
+  color: white;
+}
+.btn.primary:hover {
+  background-color: #0056b3;
+}
+.btn.green {
+  background-color: #28a745;
+  color: white;
+}
+.btn.green:hover {
+  background-color: #1e7e34;
+}
+.btn.red {
+  background-color: #dc3545;
+  color: white;
+}
+.btn.red:hover {
+  background-color: #a71d2a;
+}
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Form Fields */
+input[type=text], select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Hidden section toggle */
+.hidden {
+  display: none;
+}
+
+/* Stars */
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* Default gray for all stars */
+.stars span {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #bbb;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* When active and rated */
+.stars span.active.red { color: red; }
+.stars span.active.yellow { color: goldenrod; }
+.stars span.active.green { color: green; }
+
+.stars span:hover {
+  transform: scale(1.3);
+}
+
+.stars span.active {
+  transform: scale(1.2);
+}
+
+/* Cards */
+.card {
+  margin-bottom: 2rem;
+}

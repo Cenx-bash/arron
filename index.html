@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Government Feedback</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <!-- QR Code Section -->
+    <section id="qr-section" class="card">
+      <h2>Scan QR Code to Continue</h2>
+      <button class="btn primary" onclick="generateQRCode()">Generate QR Code</button>
+      <div id="qr-code"></div> <!-- QR Code will be displayed here -->
+    </section>
+
+    <!-- Consent Section -->
+    <section id="consent-section" class="card hidden">
+      <h2>Consent Form</h2>
+      <p>Do you agree to provide feedback?</p>
+      <div class="btn-group">
+        <button class="btn green" onclick="giveConsent(true)">Yes</button>
+        <button class="btn red" onclick="giveConsent(false)">No</button>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback-form" class="card hidden">
+      <h2>Feedback Form</h2>
+      <form id="form">
+        <!-- Star Rating -->
+        <label for="rating" id="question1">How would you rate the service?</label>
+        <div class="stars" id="stars"></div>
+
+        <!-- Yes/No Questions -->
+        <div id="yesno-questions"></div>
+
+        <button type="submit" class="btn primary">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="JS/index.js"></script>
+</body>
+</html>
